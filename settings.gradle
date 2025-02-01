@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "early-table-app"
+rootProject.name = "early-table-waiting"
 include ':app'

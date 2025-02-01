@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">early-table-app</string>
+    <string name="app_name">early-table-waiting</string>
+    <string name="waiting_confirmation">"%1$s을(를) 웨이팅 설정하시겠습니까?"</string>
 </resources>

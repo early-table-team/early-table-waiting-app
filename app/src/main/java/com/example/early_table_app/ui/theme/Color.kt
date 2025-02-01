@@ -1,4 +1,4 @@
-package com.example.early_table_app.ui.theme
+package com.example.early_table_waiting.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

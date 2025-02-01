@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/storeNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가게 이름"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/orange"
+        app:layout_constraintTop_toBottomOf="@id/storeNameTextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/btnTakeout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/orange"
+        android:text="포장 예약"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/divider"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/storeNameTextView"
+        app:layout_constraintDimensionRatio="1:1" />
+
+    <Button
+        android:id="@+id/btnDineIn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/orange"
+        android:text="매장 예약"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/divider"
+        app:layout_constraintTop_toBottomOf="@id/storeNameTextView"
+        app:layout_constraintDimensionRatio="1:1"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="298dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="428dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/btnTakeout"
+        app:layout_constraintTop_toTopOf="@+id/btnTakeout"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/teamsWaitingTextTakeout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재 대기중인 팀 수: 3팀"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/estimatedWaitTimeTakeout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="예상 대기시간: 15분"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="298dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="428dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toTopOf="@+id/btnDineIn"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/teamsWaitingTextDineIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재 대기중인 팀 수: 5팀"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/estimatedWaitTimeDineIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="예상 대기시간: 25분"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
